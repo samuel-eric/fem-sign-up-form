@@ -24,7 +24,7 @@ body {
 }
 
 .error {
-	background: white url('/images/icon-error.svg');
+	background: white url('images/icon-error.svg');
 	background-position: 95% 50%;
 	background-repeat: no-repeat;
 	border: 2px solid var(--red-primary) !important;
@@ -44,7 +44,7 @@ input[type='email'].error::placeholder {
 
 /* layout */
 main {
-	background: url('/images/bg-intro-mobile.png'), var(--red-primary);
+	background: url('images/bg-intro-mobile.png'), var(--red-primary);
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -143,7 +143,7 @@ main {
 /* DESKTOP DESIGN */
 @media (min-width: 1440px) {
 	main {
-		background: url('/images/bg-intro-desktop.png'), var(--red-primary);
+		background: url('images/bg-intro-desktop.png'), var(--red-primary);
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
