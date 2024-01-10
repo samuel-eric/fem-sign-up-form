@@ -12,6 +12,9 @@
 	--blue-accent: hsl(248, 32%, 49%);
 	--dark-blue-neutral: hsl(249, 10%, 26%);
 	--grayish-blue-neutral: hsl(246, 25%, 77%);
+	--shadow: rgba(62, 60, 73, 0.218);
+	--shadow-cta-button: hsl(154, 58%, 39%);
+	--white: #fff;
 }
 
 body {
@@ -19,10 +22,94 @@ body {
 	font-size: 16px;
 }
 
+/* MOBILE DESIGN */
+
+/* layout */
 main {
 	background: url('/images/bg-intro-mobile.png'), var(--red-primary);
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.container {
+	text-align: center;
+	padding: 0 1.5rem;
+}
+
+/* about container */
+.about-container {
+	color: var(--white);
+}
+
+.title {
+	color: var(--white);
+	line-height: 2.3rem;
+	font-size: 1.8rem;
+	margin: 0 0 1.4rem 0;
+}
+
+.about-text {
+	margin: 0 0 3rem 0;
+}
+
+/* cta container */
+.cta-price {
+	background-color: var(--blue-accent);
+	color: var(--white);
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	box-shadow: 0 7px var(--shadow);
+	margin-bottom: 1.4rem;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.cta-form-container {
+	background-color: var(--white);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 7px var(--shadow);
+}
+
+.cta-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+	margin-bottom: 0.9rem;
+}
+
+.cta-form input {
+	padding: 0.9rem;
+	font-weight: 600;
+	font-family: inherit;
+	border: 1px solid var(--grayish-blue-neutral);
+	border-radius: 5px;
+}
+
+.cta-form button {
+	text-transform: uppercase;
+	background-color: var(--green-primary);
+	padding: 0.9rem;
+	border: none;
+	border-radius: 5px;
+	font-weight: 600;
+	color: var(--white);
+	letter-spacing: 0.1rem;
+	box-shadow: 0 3px var(--shadow-cta-button);
+}
+
+.term-service-text {
+	font-size: 0.7rem;
+	padding: 0 1rem;
+	color: var(--grayish-blue-neutral);
+}
+
+.term-service-text a:link {
+	text-decoration: none;
+	font-weight: 600;
+	color: var(--red-primary);
 }
