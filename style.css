@@ -144,6 +144,8 @@ main {
 @media (min-width: 1440px) {
 	main {
 		background: url('/images/bg-intro-desktop.png'), var(--red-primary);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.container {
