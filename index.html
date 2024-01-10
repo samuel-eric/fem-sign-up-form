@@ -43,11 +43,23 @@
             then $20/mo. thereafter
           </div>
           <div class="cta-form-container">
-            <form class="cta-form">
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
-              <input type="email" placeholder="Email Address">
-              <input type="password" placeholder="Password">
+            <form class="cta-form" id="cta-form">
+              <div>
+                <input type="text" placeholder="First Name" name="firstName">
+                <p class="error-message"></p>
+              </div>
+              <div>
+                <input type="text" placeholder="Last Name" name="lastName">
+                <p class="error-message"></p>
+              </div>
+              <div>
+                <input type="email" placeholder="Email Address" name="email">
+                <p class="error-message"></p>
+              </div>
+              <div>
+                <input type="password" placeholder="Password" name="password">
+                <p class="error-message"></p>
+              </div>
               <button type="submit" class="cta-button">Claim your free trial</button>
             </form>
             <p class="term-service-text">By clicking the button, you are agreeing to our <a href="#">Terms and
@@ -63,6 +75,8 @@
         Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer> -->
+
+    <script src="script.js"></script>
   </body>
 
 </html>
