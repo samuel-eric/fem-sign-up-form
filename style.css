@@ -9,11 +9,12 @@
 :root {
 	--red-primary: hsl(0, 100%, 74%);
 	--green-primary: hsl(154, 59%, 51%);
+	--green-primary-hover: #74dbaf;
 	--blue-accent: hsl(248, 32%, 49%);
 	--dark-blue-neutral: hsl(249, 10%, 26%);
 	--grayish-blue-neutral: hsl(246, 25%, 77%);
 	--shadow: rgba(62, 60, 73, 0.218);
-	--shadow-cta-button: hsl(154, 58%, 39%);
+	--shadow-cta-button: #227a54;
 	--white: #fff;
 }
 
@@ -26,7 +27,7 @@ body {
 	background: white url('/images/icon-error.svg');
 	background-position: 95% 50%;
 	background-repeat: no-repeat;
-	border: 1px solid var(--red-primary) !important;
+	border: 2px solid var(--red-primary) !important;
 }
 
 .error-message {
@@ -121,6 +122,11 @@ main {
 	color: var(--white);
 	letter-spacing: 0.1rem;
 	box-shadow: 0 3px var(--shadow-cta-button);
+}
+
+.cta-form button:hover {
+	background-color: var(--green-primary-hover);
+	cursor: pointer;
 }
 
 .term-service-text {
