@@ -27,6 +27,7 @@ body {
 /* layout */
 main {
 	background: url('/images/bg-intro-mobile.png'), var(--red-primary);
+	background-position: center;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -36,6 +37,7 @@ main {
 .container {
 	text-align: center;
 	padding: 0 1.5rem;
+	margin-top: 1.3rem;
 }
 
 /* about container */
@@ -51,49 +53,50 @@ main {
 }
 
 .about-text {
-	margin: 0 0 3rem 0;
+	margin: 0 0 4rem 0;
+	line-height: 1.6rem;
 }
 
 /* cta container */
 .cta-price {
 	background-color: var(--blue-accent);
 	color: var(--white);
-	padding: 1rem 3rem;
-	border-radius: 8px;
+	padding: 1.3rem 3rem;
+	border-radius: 10px;
 	box-shadow: 0 7px var(--shadow);
 	margin-bottom: 1.4rem;
 }
 
 .bold {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .cta-form-container {
 	background-color: var(--white);
 	padding: 1.5rem;
-	border-radius: 8px;
+	border-radius: 10px;
 	box-shadow: 0 7px var(--shadow);
 }
 
 .cta-form {
 	display: flex;
 	flex-direction: column;
-	gap: 0.9rem;
+	gap: 1rem;
 	margin-bottom: 0.9rem;
 }
 
 .cta-form input {
-	padding: 0.9rem;
+	padding: 1.1rem;
 	font-weight: 600;
 	font-family: inherit;
 	border: 1px solid var(--grayish-blue-neutral);
-	border-radius: 5px;
+	border-radius: 7px;
 }
 
 .cta-form button {
 	text-transform: uppercase;
 	background-color: var(--green-primary);
-	padding: 0.9rem;
+	padding: 1.2rem;
 	border: none;
 	border-radius: 5px;
 	font-weight: 600;
